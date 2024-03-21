@@ -993,32 +993,32 @@ public class InAppWebViewChromeClient extends WebChromeClient implements PluginR
 
     Intent pickerIntent = null;
 
-    if (captureEnabled) {
-      if (!needsCameraPermission()) {
-        if (images) {
-          pickerIntent = getPhotoIntent();
-        }
-        else if (video) {
-          pickerIntent = getVideoIntent();
-        }
-      }
-    }
+//    if (captureEnabled) {
+//      if (!needsCameraPermission()) {
+//        if (images) {
+//          pickerIntent = getPhotoIntent();
+//        }
+//        else if (video) {
+//          pickerIntent = getVideoIntent();
+//        }
+//      }
+//    }
     if (pickerIntent == null) {
-      ArrayList<Parcelable> extraIntents = new ArrayList<>();
-      if (!needsCameraPermission()) {
-        if (images) {
-          extraIntents.add(getPhotoIntent());
-        }
-        if (video) {
-          extraIntents.add(getVideoIntent());
-        }
-      }
+//      ArrayList<Parcelable> extraIntents = new ArrayList<>();
+//      if (!needsCameraPermission()) {
+//        if (images) {
+//          extraIntents.add(getPhotoIntent());
+//        }
+//        if (video) {
+//          extraIntents.add(getVideoIntent());
+//        }
+//      }
 
       Intent fileSelectionIntent = getFileChooserIntent(acceptTypes, allowMultiple);
 
       pickerIntent = new Intent(Intent.ACTION_CHOOSER);
       pickerIntent.putExtra(Intent.EXTRA_INTENT, fileSelectionIntent);
-      pickerIntent.putExtra(Intent.EXTRA_INITIAL_INTENTS, extraIntents.toArray(new Parcelable[]{}));
+//      pickerIntent.putExtra(Intent.EXTRA_INITIAL_INTENTS, extraIntents.toArray(new Parcelable[]{}));
     }
 
     Activity activity = getActivity();
