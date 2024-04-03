@@ -1,3 +1,13 @@
+# 云子苏研云电脑App项目的少量魔改的webview
+
+1. 修改安卓侧input输入框为上传图片时，点击自动跳转至文件选择页，而不会打开相机的情况。
+
+      1.1. 修改的文件为`flutter_inappwebview_android/android/src/main/java/com/pichillilorenzo/flutter_inappwebview_android/webview/in_app_webview/InAppWebViewChromeClient.java`
+
+      1.2. commit id:`edba4869bf10b4b3a42cdc84dc5e550c735bf6f7`
+
+
+
 <div align="center">
 
 # Flutter InAppWebView Plugin [![Share on Twitter](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Flutter%20InAppBrowser%20plugin!&url=https://github.com/pichillilorenzo/flutter_inappwebview&hashtags=flutter,flutterio,dart,dartlang,webview) [![Share on Facebook](https://img.shields.io/badge/share-facebook-blue.svg?longCache=true&style=flat&colorB=%234267b2)](https://www.facebook.com/sharer/sharer.php?u=https%3A//github.com/pichillilorenzo/flutter_inappwebview)
