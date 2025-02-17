@@ -15,3 +15,5 @@
      private *;
 }
 -keep class com.pichillilorenzo.flutter_inappwebview_android.** { *; }
+# pcas-app 主工程迁移到Flutter SDK 3.24.5，修复打包错误
+-dontwarn android.window.BackEvent
